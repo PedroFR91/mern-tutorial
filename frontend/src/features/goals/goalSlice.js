@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-
+import goalService from './goalService';
 const initialState = {
   goals: [],
   isError: false,
@@ -14,7 +14,17 @@ export const createGoal = createAsyncThunk(
   'goals/create',
   async (goalData, thunkAPI) => {
     try {
-    } catch (error) {}
+      const token = thunkAPI.getState().auth.user.token;
+      return await goalService.createGoal(goalData);
+    } catch (error) {
+      const message =
+        (error.response &&
+          error.response.data &&
+          error.response.data.message) ||
+        error.message ||
+        error.toString();
+      return thunkAPI.rejectWithValue(message);
+    }
   }
 );
 
