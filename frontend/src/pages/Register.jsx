@@ -54,11 +54,7 @@ function Register() {
   return (
     <>
       <section className='heading'>
-        <h1>
-          <FaUser />
-          Register
-        </h1>
-        <p>Please create an account</p>
+        <h1>Registro de usuario</h1>
         <section className='form'>
           <form onSubmit={onSubmit}>
             <div className='form-group'>
@@ -68,7 +64,7 @@ function Register() {
                 id='name'
                 name='name'
                 value={name}
-                placeholder='Enter your name'
+                placeholder='Nombre Usuario'
                 onChange={onChange}
               />
             </div>
@@ -79,7 +75,7 @@ function Register() {
                 id='email'
                 name='email'
                 value={email}
-                placeholder='Enter your email'
+                placeholder='email'
                 onChange={onChange}
               />
             </div>
@@ -90,7 +86,7 @@ function Register() {
                 id='password'
                 name='password'
                 value={password}
-                placeholder='Enter your password'
+                placeholder='Contraseña'
                 onChange={onChange}
               />
             </div>
@@ -101,7 +97,7 @@ function Register() {
                 id='password2'
                 name='password2'
                 value={password2}
-                placeholder='Confirm your password'
+                placeholder='Contraseña'
                 onChange={onChange}
               />
             </div>

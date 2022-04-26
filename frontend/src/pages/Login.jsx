@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { FaSignInAlt } from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -53,11 +52,8 @@ function Login() {
   return (
     <>
       <section className='heading'>
-        <h1>
-          <FaSignInAlt />
-          Login
-        </h1>
-        <p>Now, you can access!</p>
+        <h1>Acceso</h1>
+        <p>Solymar Energía</p>
         <section className='form'>
           <form onSubmit={onSubmit}>
             <div className='form-group'>

@@ -5,6 +5,11 @@ import GoalForm from '../components/GoalForm';
 import Spinner from '../components/Spinner';
 import { getGoals, reset } from '../features/goals/goalSlice';
 import GoalItem from '../components/GoalItem';
+import Fondo from '../components/Fondo';
+import Card from '../components/Card';
+import bd from '../assets/bbdd.png';
+import comp from '../assets/comparacion.png';
+import { Link } from 'react-router-dom';
 function Dashboard() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -31,9 +36,9 @@ function Dashboard() {
   }
   return (
     <>
+      <Fondo />
       <section className='heading'>
-        <h1>Welcome {user && user.name}</h1>
-        <p>Goals Dashboard</p>
+        <h1>Bienvenid@ {user && user.name}</h1>
       </section>
 
       <GoalForm />
@@ -45,8 +50,18 @@ function Dashboard() {
             ))}
           </div>
         ) : (
-          <h3>No se han establecidos objetivos</h3>
+          <h3>Añade tus recordatorios</h3>
         )}
+      </section>
+      <div className='line'></div>
+      <h3>Mi Panel de Control</h3>
+      <section className='panel' style={{ display: 'flex' }}>
+        <Link to='/datos'>
+          <Card img={bd} text={'Ofertas'} />
+        </Link>
+        <Link to='/comparador'>
+          <Card img={comp} text={'Comparador'} />
+        </Link>
       </section>
     </>
   );
