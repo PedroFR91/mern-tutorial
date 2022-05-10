@@ -6,28 +6,11 @@ function Datos() {
   return (
     <>
       <Fondo />
+      <div className='toggle-view'>Cuadrícula/Tabla</div>
       <div className='mapofertas'>
-        <table className='table'>
-          <tr>
-            <th style={{ width: '140px' }}>Comercializadora</th>
-            <th style={{ width: '80px' }}>Tarifa</th>
-            <th style={{ width: '300px' }}>Denominación</th>
-            <th style={{ width: '60px' }}>TP1</th>
-            <th style={{ width: '60px' }}>TP2</th>
-            <th style={{ width: '60px' }}>TP3</th>
-            <th style={{ width: '60px' }}>TP4</th>
-            <th style={{ width: '60px' }}>TP5</th>
-            <th style={{ width: '60px' }}>TP6</th>
-            <th style={{ width: '60px' }}>TE1</th>
-            <th style={{ width: '60px' }}>TE2</th>
-            <th style={{ width: '60px' }}>TE3</th>
-            <th style={{ width: '60px' }}>TE4</th>
-            <th style={{ width: '60px' }}>TE5</th>
-            <th style={{ width: '60px' }}>TE6</th>
-          </tr>
-        </table>
         {comers.map((oferta) => (
           <Oferta
+            img={oferta.img}
             company={oferta.company}
             tipo={oferta.tipo}
             tarifa={oferta.tarifa}

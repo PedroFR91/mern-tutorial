@@ -9,15 +9,21 @@ import Fondo from '../components/Fondo';
 import Card from '../components/Card';
 import bd from '../assets/bbdd.png';
 import comp from '../assets/comparacion.png';
+import porcentaje from '../assets/porcentaje.png';
+import contrato from '../assets/contrato.png';
+import usuarios from '../assets/usuarios.png';
 import { Link } from 'react-router-dom';
 function Dashboard() {
   const navigate = useNavigate();
+
   const dispatch = useDispatch();
 
   const { user } = useSelector((state) => state.auth);
+
   const { goals, isLoading, isError, message } = useSelector(
     (state) => state.goals
   );
+
   useEffect(() => {
     if (isError) {
       console.log(message);
@@ -31,6 +37,7 @@ function Dashboard() {
       dispatch(reset());
     };
   }, [user, navigate, isError, message, dispatch]);
+
   if (isLoading) {
     return <Spinner />;
   }
@@ -57,10 +64,19 @@ function Dashboard() {
       <h3>Mi Panel de Control</h3>
       <section className='panel' style={{ display: 'flex' }}>
         <Link to='/datos'>
-          <Card img={bd} text={'Ofertas'} />
+          <Card img={bd} text={'Datos'} />
         </Link>
         <Link to='/comparador'>
           <Card img={comp} text={'Comparador'} />
+        </Link>
+        <Link to='/comisiones'>
+          <Card img={porcentaje} text={'Comisiones'} />
+        </Link>
+        <Link to='/contratos'>
+          <Card img={contrato} text={'Contratos'} />
+        </Link>
+        <Link to='/usuarios'>
+          <Card img={usuarios} text={'Usuarios'} />
         </Link>
       </section>
     </>

@@ -1,24 +1,24 @@
 function Oferta(props) {
   return (
     <>
-      <div className='filaoferta'>
-        <tr>
-          <td style={{ width: '140px' }}>{props.company}</td>
-          <td style={{ width: '80px' }}>{props.tipo}</td>
-          <td style={{ width: '300px' }}>{props.tarifa}</td>
-          <td style={{ width: '60px' }}>{props.tp1}</td>
-          <td style={{ width: '60px' }}>{props.tp2}</td>
-          <td style={{ width: '60px' }}>{props.tp3}</td>
-          <td style={{ width: '60px' }}>{props.tp4}</td>
-          <td style={{ width: '60px' }}>{props.tp5}</td>
-          <td style={{ width: '60px' }}>{props.tp6}</td>
-          <td style={{ width: '60px' }}>{props.te1}</td>
-          <td style={{ width: '60px' }}>{props.te2}</td>
-          <td style={{ width: '60px' }}>{props.te3}</td>
-          <td style={{ width: '60px' }}>{props.te4}</td>
-          <td style={{ width: '60px' }}>{props.te5}</td>
-          <td style={{ width: '60px' }}>{props.te6}</td>
-        </tr>
+      <div className='oferta'>
+        <div>
+          <div>
+            <img src={props.img} alt='' width={'90%'} />
+          </div>
+          <div>
+            <h3>{props.tarifa}</h3>
+          </div>
+          <div>
+            <h3>{props.company}</h3>
+          </div>
+          <div>
+            <h3>{props.tipo}</h3>
+          </div>
+        </div>
+        <div>
+          <button className='precios'>Ver Precios</button>
+        </div>
       </div>
     </>
   );
