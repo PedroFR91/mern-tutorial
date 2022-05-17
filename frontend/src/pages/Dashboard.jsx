@@ -13,6 +13,7 @@ import porcentaje from '../assets/porcentaje.png';
 import contrato from '../assets/contrato.png';
 import usuarios from '../assets/usuarios.png';
 import { Link } from 'react-router-dom';
+import ComerForm from '../components/ComerForm';
 function Dashboard() {
   const navigate = useNavigate();
 
@@ -79,6 +80,7 @@ function Dashboard() {
           <Card img={usuarios} text={'Usuarios'} />
         </Link>
       </section>
+      <ComerForm />
     </>
   );
 }

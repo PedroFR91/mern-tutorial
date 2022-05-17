@@ -6,8 +6,31 @@ function Datos() {
   return (
     <>
       <Fondo />
-      <div className='toggle-view'>Cuadrícula/Tabla</div>
+
       <div className='mapofertas'>
+        <div className='oferta'>
+          <div className='width-company'>
+            <h3>COMPAÑÍA</h3>
+          </div>
+          <div className='width-tipo'>
+            <h3>TIPO </h3>
+          </div>
+          <div className='width-deno'>
+            <h3>DENOMINACIÓN</h3>
+          </div>
+          <div className='width-tp'>Tp1</div>
+          <div className='width-tp'>Tp2</div>
+          <div className='width-tp'>Tp3</div>
+          <div className='width-tp'>Tp4</div>
+          <div className='width-tp'>Tp5</div>
+          <div className='width-tp'>Tp6</div>
+          <div className='width-tp'>Te1</div>
+          <div className='width-tp'>Te2</div>
+          <div className='width-tp'>Te3</div>
+          <div className='width-tp'>Te4</div>
+          <div className='width-tp'>Te5</div>
+          <div className='width-tp'>Te6</div>
+        </div>
         {comers.map((oferta) => (
           <Oferta
             img={oferta.img}
