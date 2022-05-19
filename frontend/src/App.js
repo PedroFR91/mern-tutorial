@@ -8,6 +8,7 @@ import Dashboard from './pages/Dashboard';
 import Datos from './pages/Datos';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Usuarios from './pages/Usuarios';
 function App() {
   return (
     <div className='App'>
@@ -22,6 +23,7 @@ function App() {
               <Route path='/datos' element={<Datos />} />
               <Route path='/comparador' element={<Comparador />} />
               <Route path='/comisiones' element={<Comisiones />} />
+              <Route path='/usuarios' element={<Usuarios />} />
             </Routes>
           </div>
         </Router>

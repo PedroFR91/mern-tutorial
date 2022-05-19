@@ -6,49 +6,21 @@ function Datos() {
   return (
     <>
       <Fondo />
+      <h1>Añadir Ofertas</h1>
+      <h3>---Próximamente---</h3>
+      <h5>Los admin podrán crear las ofertas desde aquí</h5>
+      <h1>Añadir Usuarios</h1>
+      <h3>---Próximamente---</h3>
+      <h5>Los Admin podrán crear usuarios desde aquí</h5>
+      <h1>Buscador de Ofertas</h1>
 
       <div className='mapofertas'>
-        <div className='oferta'>
-          <div className='width-company'>
-            <h3>COMPAÑÍA</h3>
-          </div>
-          <div className='width-tipo'>
-            <h3>TIPO </h3>
-          </div>
-          <div className='width-deno'>
-            <h3>DENOMINACIÓN</h3>
-          </div>
-          <div className='width-tp'>Tp1</div>
-          <div className='width-tp'>Tp2</div>
-          <div className='width-tp'>Tp3</div>
-          <div className='width-tp'>Tp4</div>
-          <div className='width-tp'>Tp5</div>
-          <div className='width-tp'>Tp6</div>
-          <div className='width-tp'>Te1</div>
-          <div className='width-tp'>Te2</div>
-          <div className='width-tp'>Te3</div>
-          <div className='width-tp'>Te4</div>
-          <div className='width-tp'>Te5</div>
-          <div className='width-tp'>Te6</div>
-        </div>
         {comers.map((oferta) => (
           <Oferta
             img={oferta.img}
             company={oferta.company}
             tipo={oferta.tipo}
             tarifa={oferta.tarifa}
-            tp1={(oferta.tp1 / 365).toFixed(2)}
-            tp2={(oferta.tp2 / 365).toFixed(2)}
-            tp3={(oferta.tp3 / 365).toFixed(2)}
-            tp4={(oferta.tp4 / 365).toFixed(2)}
-            tp5={(oferta.tp5 / 365).toFixed(2)}
-            tp6={(oferta.tp6 / 365).toFixed(2)}
-            te1={oferta.te1.toFixed(2)}
-            te2={oferta.te2.toFixed(2)}
-            te3={oferta.te3.toFixed(2)}
-            te4={oferta.te4.toFixed(2)}
-            te5={oferta.te5.toFixed(2)}
-            te6={oferta.te6.toFixed(2)}
           />
         ))}
       </div>
