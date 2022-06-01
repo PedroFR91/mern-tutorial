@@ -216,7 +216,7 @@ h3 {
 .mapofertas {
   position: absolute;
   width: 80%;
-  top: 15vh;
+  margin-top: 20px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #ffffff88;

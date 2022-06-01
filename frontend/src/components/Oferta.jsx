@@ -11,6 +11,9 @@ function Oferta(props) {
         <div>
           <h3>{props.tarifa}</h3>
         </div>
+        <div>
+          <h5>{props.orden}</h5>
+        </div>
       </div>
     </>
   );
