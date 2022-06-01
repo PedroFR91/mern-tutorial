@@ -234,6 +234,9 @@ th {
   background-color: #f0971d;
   color: #ffffff;
 }
+td {
+  transform: translateX(50%);
+}
 /*Comparativa*/
 
 .inputForm {

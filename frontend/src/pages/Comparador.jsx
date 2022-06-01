@@ -33,7 +33,7 @@ function Comparador() {
     const doc = new jsPDF();
     doc.html(content, {
       callback: function (doc) {
-        doc.save('oferta.pdf');
+        doc.save(`oferta_${cliente}.pdf`);
       },
       html2canvas: { scale: 0.25 },
     });
@@ -245,30 +245,30 @@ function Comparador() {
         <div className='datos-factura'>
           <div>
             <div>
-              <span className='orange mitad'>Fecha:</span>
+              <th className='orange mitad'>Fecha:</th>
               <span>{fecha}</span>
             </div>
             <div>
-              <span className='orange mitad'>Tipo de Tarifa:</span>
+              <th className='orange mitad'>Tipo de Tarifa:</th>
               <span>{tipotarifa}</span>
             </div>
             <div>
-              <span className='orange mitad'>Denominación:</span>
+              <th className='orange mitad'>Denominación:</th>
               <span>{tarifa}</span>
             </div>
             <div>
-              <span className='orange mitad'>Cliente:</span>
+              <th className='orange mitad'>Cliente:</th>
               <span>{cliente}</span>
             </div>
             <div>
-              <span className='orange mitad'>Días Facturados:</span>
+              <th className='orange mitad'>Días Facturados:</th>
               <span>{dias}</span>
             </div>
           </div>
 
           <div className='potencias'>
             <div>
-              <span className='orange'>Potencia Contratada:</span>
+              <th className='orange'>Potencia Contratada:</th>
               <div className='pot-con'>
                 <table>
                   <th>P1</th>
@@ -287,7 +287,7 @@ function Comparador() {
               </div>
             </div>
             <div>
-              <span className='orange'>Potencia Consumida:</span>
+              <th className='orange'>Potencia Consumida:</th>
               <div className='pot-con'>
                 <table>
                   <th>P1</th>
