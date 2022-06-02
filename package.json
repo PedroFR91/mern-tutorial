@@ -23,12 +23,9 @@
     "express": "^4.17.2",
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
-
     "jspdf": "^2.5.1",
     "mongoose": "^6.2.0",
     "webpack": "^5.72.1"
-
-
   },
   "devDependencies": {
     "concurrently": "^7.0.0",
