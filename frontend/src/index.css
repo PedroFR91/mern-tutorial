@@ -219,16 +219,10 @@ h3 {
 /*MAP OFERTAS*/
 .mapofertas {
   position: absolute;
-<<<<<<< HEAD
   width: 80%;
   margin-top: 20px;
-=======
-  width: 100%;
-  margin: auto;
->>>>>>> eebe4b393c7a59342f262630f9bdc7a78db32395
   left: 50%;
   transform: translateX(-50%);
-<<<<<<< HEAD
   background-color: #ffffff88;
   display: flex;
   flex-wrap: wrap;
@@ -267,8 +261,6 @@ th {
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 20px;
-=======
->>>>>>> fa153ce8561dd3f073da0b7512d80cfe91b7306f
   display: flex;
   flex-wrap: wrap;
 }

@@ -67,9 +67,6 @@ function Dashboard() {
         <Link to='/datos'>
           <Card img={bd} text={'Ofertas'} />
         </Link>
-        <Link to='/comparador'>
-          <Card img={comp} text={'Comparador'} />
-        </Link>
         <Link to='/comisiones'>
           <Card img={porcentaje} text={'Comisiones'} />
         </Link>
