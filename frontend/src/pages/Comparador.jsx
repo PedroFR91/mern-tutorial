@@ -1,35 +1,8 @@
-import React, { useRef, useState } from 'react';
-import jsPDF from 'jspdf';
+import React, { useState } from 'react';
 import Fondo from '../components/Fondo';
-import Logo from '../assets/solymarenergia.png';
-import logo from '../assets/iberdrola.png';
-import pdfImg from '../assets/pdf.svg.png';
-import comers from '../data/data';
-function Comparador() {
-  const [cliente, setCliente] = useState('');
-  const [tarifa, setTarifa] = useState('');
-  const [tipotarifa, setTipotarifa] = useState('');
-  const [dias, setDias] = useState('');
-  const [fecha, setFecha] = useState('');
-  const [potencia1, setPotencia1] = useState(0);
-  const [potencia2, setPotencia2] = useState(0);
-  const [potencia3, setPotencia3] = useState(0);
-  const [potencia4, setPotencia4] = useState(0);
-  const [potencia5, setPotencia5] = useState(0);
-  const [potencia6, setPotencia6] = useState(0);
-  const [potcon1, setPotcon1] = useState(0);
-  const [potcon2, setPotcon2] = useState(0);
-  const [potcon3, setPotcon3] = useState(0);
-  const [potcon4, setPotcon4] = useState(0);
-  const [potcon5, setPotcon5] = useState(0);
-  const [potcon6, setPotcon6] = useState(0);
-  const [actual, setActual] = useState(0);
-  const alq = 1;
-  const pdfRef = useRef(null);
+import FormInput from '../components/FormInput';
 
-  const handleDownload = () => {
-    const content = pdfRef.current;
-
+<<<<<<< HEAD
     const doc = new jsPDF();
     doc.html(content, {
       callback: function (doc) {
@@ -38,10 +11,14 @@ function Comparador() {
       html2canvas: { scale: 0.25 },
     });
   };
+=======
+function Comparador() {
+>>>>>>> fa153ce8561dd3f073da0b7512d80cfe91b7306f
   return (
     <>
       <Fondo />
       <div className='comparativa'>
+<<<<<<< HEAD
         <form className='inputForm'>
           <div>
             <div>
@@ -412,6 +389,10 @@ function Comparador() {
         </div>
         <div className='desglose'></div>
         <div className='ahorro'></div>
+=======
+        <h1>Hacer Comparativa</h1>
+        <h3>Introduzca los datos requeridos</h3>
+>>>>>>> fa153ce8561dd3f073da0b7512d80cfe91b7306f
       </div>
     </>
   );

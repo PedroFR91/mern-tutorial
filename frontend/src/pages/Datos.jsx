@@ -20,6 +20,7 @@ function Datos() {
   return (
     <>
       <Fondo />
+<<<<<<< HEAD
       <h1>¿Qué tarifa me conviene?</h1>
       <h2>Introduzca los datos de su factura</h2>
       <div>
@@ -216,10 +217,24 @@ function Datos() {
 
       <div className='mapofertas'>
         {orderedComers.map((oferta) => (
+=======
+      <h1>Añadir Ofertas</h1>
+      <h3>---Próximamente---</h3>
+      <h5>Los admin podrán crear las ofertas desde aquí</h5>
+      <h1>Añadir Usuarios</h1>
+      <h3>---Próximamente---</h3>
+      <h5>Los Admin podrán crear usuarios desde aquí</h5>
+      <h1>Buscador de Ofertas</h1>
+
+      <div className='mapofertas'>
+        {comers.map((oferta) => (
+>>>>>>> eebe4b393c7a59342f262630f9bdc7a78db32395
           <Oferta
+            img={oferta.img}
             company={oferta.company}
             tipo={oferta.tipo}
             tarifa={oferta.tarifa}
+<<<<<<< HEAD
             tp1={oferta.tp1}
             tp2={oferta.tp2}
             tp3={oferta.tp3}
@@ -249,6 +264,8 @@ function Datos() {
                 alq) *
               1.21
             }
+=======
+>>>>>>> eebe4b393c7a59342f262630f9bdc7a78db32395
           />
         ))}
       </div>
