@@ -264,17 +264,6 @@ th {
   display: flex;
   flex-wrap: wrap;
 }
-.oferta {
-  width: 250px;
-  height: min-content;
-  background-color: #ffffff88;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px auto;
-}
 
 .width-company,
 .width-tipo {
