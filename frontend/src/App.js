@@ -5,9 +5,10 @@ import Header from './components/Header';
 import Dashboard from './pages/Dashboard';
 import Datos from './pages/Datos';
 import Login from './pages/Login';
+import Ofertas from './pages/Ofertas';
 import Register from './pages/Register';
 import Usuarios from './pages/Usuarios';
-import Comparador from './pages/Comparador';
+
 function App() {
   return (
     <div className='App'>
@@ -20,8 +21,8 @@ function App() {
               <Route path='/login' element={<Login />} />
               <Route path='/register' element={<Register />} />
               <Route path='/datos' element={<Datos />} />
-              <Route path='/comparador' element={<Comparador />} />
               <Route path='/usuarios' element={<Usuarios />} />
+              <Route path='/ofertas' element={<Ofertas />} />
             </Routes>
           </div>
         </Router>

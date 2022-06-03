@@ -65,10 +65,10 @@ function Dashboard() {
       <h3>Mi Panel de Control</h3>
       <section className='panel' style={{ display: 'flex' }}>
         <Link to='/datos'>
-          <Card img={bd} text={'Ofertas'} />
+          <Card img={bd} text={'Tarifas Actuales'} />
         </Link>
-        <Link to='/comisiones'>
-          <Card img={porcentaje} text={'Comisiones'} />
+        <Link to='/ofertas'>
+          <Card img={porcentaje} text={'Ofertas'} />
         </Link>
         <Link to='/contratos'>
           <Card img={contrato} text={'Contratos'} />
