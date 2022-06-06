@@ -19,6 +19,7 @@
   "dependencies": {
     "@babel/core": "^7.18.2",
     "bcryptjs": "^2.4.3",
+    "blob": "^0.1.0",
     "browserify-zlib": "^0.2.0",
     "buffer": "^6.0.3",
     "colors": "^1.4.0",
