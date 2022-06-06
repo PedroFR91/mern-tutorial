@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Fondo from '../components/Fondo';
 import Oferta from '../components/Oferta';
 import comers from '../data/data';
@@ -20,200 +21,21 @@ function Datos() {
   return (
     <>
       <Fondo />
-      <h1>¿Qué tarifa me conviene?</h1>
-      <h2>Introduzca los datos de su factura</h2>
       <div>
-        <h3>Tipo de tarifa</h3>
-        <select name='tarifa' id='' style={{ width: '60px' }}>
-          <option value='2.0'>2.0</option>
-          <option value='3.0'>3.0</option>
-          <option value='6.1'>6.1</option>
-        </select>
+        <Link to='/ofertas'>
+          <div
+            style={{
+              width: '70%',
+              margin: '0 auto',
+              padding: '5px',
+              backgroundColor: '#FFC720',
+              border: 'none',
+            }}
+          >
+            Generar Oferta
+          </div>
+        </Link>
       </div>
-      <div
-        style={{
-          width: '50%',
-          display: 'flex',
-          margin: '0 auto',
-          justifyContent: 'space-between',
-        }}
-      >
-        <div style={{ width: '120px' }}>
-          <h3>Potencia Contratada</h3>
-          <div
-            style={{
-              width: '80px',
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}
-          >
-            <label htmlFor=''>P1</label>
-            <input
-              type='text'
-              style={{ width: '50px' }}
-              onChange={(e) => setPotcon1(e.target.value)}
-            />
-          </div>
-          <div
-            style={{
-              width: '80px',
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}
-          >
-            <label htmlFor=''>P2</label>
-            <input
-              type='text'
-              style={{ width: '50px' }}
-              onChange={(e) => setPotcon2(e.target.value)}
-            />
-          </div>
-          <div
-            style={{
-              width: '80px',
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}
-          >
-            <label htmlFor=''>P3</label>
-            <input
-              type='text'
-              style={{ width: '50px' }}
-              onChange={(e) => setPotcon3(e.target.value)}
-            />
-          </div>
-          <div
-            style={{
-              width: '80px',
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}
-          >
-            <label htmlFor=''>P4</label>
-            <input
-              type='text'
-              style={{ width: '50px' }}
-              onChange={(e) => setPotcon4(e.target.value)}
-            />
-          </div>
-          <div
-            style={{
-              width: '80px',
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}
-          >
-            <label htmlFor=''>P5</label>
-            <input
-              type='text'
-              style={{ width: '50px' }}
-              onChange={(e) => setPotcon5(e.target.value)}
-            />
-          </div>
-          <div
-            style={{
-              width: '80px',
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}
-          >
-            <label htmlFor=''>P6</label>
-            <input
-              type='text'
-              style={{ width: '50px' }}
-              onChange={(e) => setPotcon6(e.target.value)}
-            />
-          </div>
-        </div>
-        <div style={{ width: '120px' }}>
-          <h3>Potencia Consumida</h3>
-          <div
-            style={{
-              width: '80px',
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}
-          >
-            <label htmlFor=''>P1</label>
-            <input
-              type='text'
-              style={{ width: '50px' }}
-              onChange={(e) => setPotencia1(e.target.value)}
-            />
-          </div>
-          <div
-            style={{
-              width: '80px',
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}
-          >
-            <label htmlFor=''>P2</label>
-            <input
-              type='text'
-              style={{ width: '50px' }}
-              onChange={(e) => setPotencia2(e.target.value)}
-            />
-          </div>
-          <div
-            style={{
-              width: '80px',
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}
-          >
-            <label htmlFor=''>P3</label>
-            <input
-              type='text'
-              style={{ width: '50px' }}
-              onChange={(e) => setPotencia3(e.target.value)}
-            />
-          </div>
-          <div
-            style={{
-              width: '80px',
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}
-          >
-            <label htmlFor=''>P4</label>
-            <input
-              type='text'
-              style={{ width: '50px' }}
-              onChange={(e) => setPotencia4(e.target.value)}
-            />
-          </div>
-          <div
-            style={{
-              width: '80px',
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}
-          >
-            <label htmlFor=''>P5</label>
-            <input
-              type='text'
-              style={{ width: '50px' }}
-              onChange={(e) => setPotencia5(e.target.value)}
-            />
-          </div>
-          <div
-            style={{
-              width: '80px',
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}
-          >
-            <label htmlFor=''>P6</label>
-            <input
-              type='text'
-              style={{ width: '50px' }}
-              onChange={(e) => setPotencia6(e.target.value)}
-            />
-          </div>
-        </div>
-      </div>
-
       <div className='mapofertas'>
         {orderedComers.map((oferta) => (
           <Oferta

@@ -9,11 +9,8 @@ function Oferta(props) {
         <div>
           <h3>{props.tarifa}</h3>
         </div>
-        <div>
-          <h5>{props.orden}</h5>
-        </div>
-        <div>
-          <Link to='/ofertas'>
+        {/* <div>
+          <Link to='/detalles'>
             <div
               style={{
                 width: '70%',
@@ -23,10 +20,10 @@ function Oferta(props) {
                 border: 'none',
               }}
             >
-              Generar Oferta
+              Ver precios
             </div>
           </Link>
-        </div>
+            </div>*/}
       </div>
     </>
   );

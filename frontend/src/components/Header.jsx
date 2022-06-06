@@ -17,7 +17,7 @@ function Header() {
     <header className='header'>
       <div className='logo'>
         <Link to='/'>
-          <img src={logo} height={'50px'} />
+          <img src={logo} height={'50px'} alt='logo' />
         </Link>
       </div>
       <ul>
